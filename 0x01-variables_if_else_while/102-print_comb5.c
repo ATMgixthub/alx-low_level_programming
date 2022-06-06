@@ -10,7 +10,7 @@ int main(void)
 	int num1;
 	int num2;
 	int num3;
-	int num4;
+	int num4 = '0';
 
 	for (num1 = '0'; num1 <= '9'; num1++)
 	{
@@ -32,7 +32,6 @@ int main(void)
 						putchar(' ');
 					}
 				}
-				num4 = '0';
 			}
 		}
 	}
