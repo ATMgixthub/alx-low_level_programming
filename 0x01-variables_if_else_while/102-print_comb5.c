@@ -18,7 +18,7 @@ int main(void)
 		{
 			for (num3 = num1; num3 <= '9'; num3++)
 			{
-				for (num4 = (num2 + 1); num4 <= '9'; num4++)
+				for (num4 = num2 + 1; num4 <= '9'; num4++)
 				{
 					putchar(num1);
 					putchar(num2);
