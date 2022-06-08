@@ -23,7 +23,7 @@ void times_table(void)
 			if (multiple <= 9)
 			{
 				_putchar(',');
-				_puthar(' ');
+				_putchar(' ');
 				_putchar(' ');
 				_putchar('0' + multiple);
 			}
