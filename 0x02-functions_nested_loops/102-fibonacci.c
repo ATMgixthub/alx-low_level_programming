@@ -17,10 +17,10 @@ int main(void)
 		printf("%li, %li, ", a, b);
 		a += b;
 		b += a;
-
-		if (countto % 2 == 1)
-			printf("\n");
 	}
+	if (countto % 2 == 1)
+		printf("%li\n", a);
+	
 	printf("\n");
 
 	return (0);
