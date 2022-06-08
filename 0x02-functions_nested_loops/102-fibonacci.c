@@ -13,13 +13,13 @@ int main(void)
 
 	for (i = 1; i <= (50 / 2); i++)
 	{
-		if (50 % 2 == 1)
-			printf("%li", a);
-
 		printf("%li, %li, ", a, b);
 		a += b;
 		b += a;
 	}
+	if (50 % 2 == 1)
+		printf("%li", a);
+
 	printf("\n");
 
 	return (0);
