@@ -18,16 +18,13 @@ void print_times_table(int n)
 			for (column = 0; column <= n; column++)
 			{
 				multiple = (row * column);
-				
 				if (column == 0)
-				{
 					_putchar('0' + multiple);
-				}
 				else
 				{
 					_putchar(',');
 					_putchar(' ');
-					if ( multiple <= 9)
+					if (multiple <= 9)
 					{
 						_putchar(' ');
 						_putchar(' ');
