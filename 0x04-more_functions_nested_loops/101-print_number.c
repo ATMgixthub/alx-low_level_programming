@@ -7,14 +7,29 @@
 
 void print_number(int n)
 {
-	if (n < 0)
+	unsigned int num, digit, pos = n;
+	double num_start = 1;
+
+	if (n == 0)
+		_putchar('0');
+	else
 	{
-		_putchar('-');
-		num = -num;
+		if (n < 0)
+		{
+			pos = n * -1;
+			_putchar('-');
+		}
+
+		while (num_start <= pos)
+			num_start *= 10;
+		num = num_start / 10;
+
+		while (num >= 1)
+		{
+			digit = pos / num;
+			_putchar(digit + '0');
+			pos = (pos - (num * digit));
+			num /= 10;
+		}
 	}
-
-	if ((num / 10) > 0)
-		print_number(num / 10);
-
-	_putchar((num % 10) + 48);
 }
