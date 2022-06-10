@@ -10,6 +10,7 @@ void print_triangle(int size)
 	int height;
 	int width;
 	int draw;
+
 	if (size <= 0)
 		_putchar('\n');
 
