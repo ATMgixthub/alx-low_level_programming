@@ -78,4 +78,12 @@ char *cap_string(char *);
 
 char *leet(char *);
 
+/**
+ * rot13 - encode string using rot13
+ * @s: string to encode
+ * Return: encoded string
+ */
+
+char *rot13(char *);
+
 #endif
