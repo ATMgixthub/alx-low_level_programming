@@ -28,20 +28,20 @@ char *str_concat(char *s1, char *s2)
 
 	concat_str = malloc(sizeof(char) * (len1 + len2)); /*alloc memory*/
 
-	if (concat == NULL) /* validate memory */
+	if (concat_str == NULL) /* validate memory */
 		return (NULL);
 
 	i = 0, j = 0;
 	while (i < len1) /* concatenate */
 	{
-		*(concat + i) = *(s1 + i);
+		*(concat_str + i) = *(s1 + i);
 		i++;
 	}
 	while (j < len2)
 	{
-		*(concat + i) = *(s2 + j);
+		*(concat_str + i) = *(s2 + j);
 		i++, j++;
 	}
 
-	return (concat);
+	return (concat_str);
 }
