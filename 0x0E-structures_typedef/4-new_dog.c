@@ -7,7 +7,6 @@
  * @str: string
  * Return: length
  */
-
 int len(char *str)
 {
 	int i;
@@ -16,7 +15,6 @@ int len(char *str)
 		;
 	return (i);
 }
-
 /**
  * strcpy - copies the string pointed to by src,
  * including the terminating null byte (\0),
@@ -25,7 +23,6 @@ int len(char *str)
  * @src: this is the source to copy
  * Return: copy of original source
  */
-
 char *strcpy(char *dest, char *src)
 {
 	int i;
@@ -34,7 +31,6 @@ char *strcpy(char *dest, char *src)
 		dest[i] = src[i];
 	return (dest);
 }
-
 /**
  * new_dog - create new instance of struct dog
  * @name: member
@@ -42,7 +38,6 @@ char *strcpy(char *dest, char *src)
  * @owner: member
  * Return: initialized instance of struct dog
  */
-
 dog_t *new_dog(char *name, float age, char *owner)
 {
 	dog_t *dog1;
