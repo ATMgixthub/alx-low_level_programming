@@ -4,6 +4,7 @@
 /**
  * sum_them_all - return sum when given unknown amount of arguments
  * @n: integers to add
+ * @...: A variable number of paramters to calculate the sum of
  * Return: sum
  */
 
@@ -13,8 +14,8 @@ int sum_them_all(const unsigned int n, ...)
 	unsigned int sum = 0, i;
 
 	/* validate va_list and initialize */
-	/* if (n == 0) */
-		/* return (0); */
+	if (n == 0)
+		return (0);
 	va_start(nums, n);
 
 	/* iterate through list, update sum, free list */
