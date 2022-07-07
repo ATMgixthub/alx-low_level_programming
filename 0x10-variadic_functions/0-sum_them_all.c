@@ -13,8 +13,8 @@ int sum_them_all(const unsigned int n, ...)
 	unsigned int sum = 0, i;
 
 	/* validate va_list and initialize */
-	if (n == 0)
-		return (0);
+	/* if (n == 0) */
+		/* return (0); */
 	va_start(nums, n);
 
 	/* iterate through list, update sum, free list */
