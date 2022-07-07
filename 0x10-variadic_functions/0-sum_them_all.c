@@ -12,14 +12,16 @@ int sum_them_all(const unsigned int n, ...)
 	va_list nums;
 	unsigned int sum = 0, i;
 
-	/* validate valist and initialize */
+	/* validate va_list and initialize */
 	if (n == 0)
 		return (0);
+	
 	va_start(nums, n);
 
 	/* iterate through list, update sum, free list */
 	for (i = 0; i < n; i++)
 		sum += va_arg(nums, int);
+	
 	va_end(nums);
 
 	return (sum);
