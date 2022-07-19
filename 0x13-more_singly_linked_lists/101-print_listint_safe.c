@@ -92,4 +92,6 @@ size_t print_listint_safe(const listint_t *head)
 			tmp = tmp->next;
 		}
 	}
+
+	return (num_nodes);
 }
