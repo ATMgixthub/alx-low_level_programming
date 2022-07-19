@@ -10,29 +10,29 @@
  */
 size_t looped_listint_count(listint_t *head)
 {
-	listint_t *t, *h;
+	listint_t *t, *he;
 	size_t nodes = 1;
 
 	if (head == NULL || head->next == NULL)
 		return (0);
 
 	t = head->next;
-	h = (head->next)->next;
+	he = (head->next)->next;
 
-	while (h)
+	while (he)
 	{
-		if (t == h)
+		if (t == he)
 		{
 			t = head;
-			while (t != h)
+			while (t != he)
 			{
 				nodes++;
 				t = t->next;
-				h = h->next;
+				he = he->next;
 			}
 
 			t = t->next;
-			while (t != h)
+			while (t != he)
 			{
 				nodes++;
 				t = t->next;
@@ -42,7 +42,7 @@ size_t looped_listint_count(listint_t *head)
 		}
 
 		t = t->next;
-		h = (h->next)->next;
+		he = (he->next)->next;
 	}
 
 	return (0);
