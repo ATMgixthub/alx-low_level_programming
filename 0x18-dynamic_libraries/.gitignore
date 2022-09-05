@@ -1,0 +1,5 @@
+/* Ignore all .c and .o files */
+
+*.o
+*.c
+*~
